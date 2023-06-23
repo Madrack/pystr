@@ -8,7 +8,8 @@ for line in f_in:
     data_matches = st.findall(line)
     # numbers = [str(num) for num in data_matches]
     if len(data_matches) != 0: 
-        myStr += ', '.join(data_matches) 
+        # myStr += ', '.join(data_matches) 
+        myStr += ' '.join(data_matches) 
     else:
         f_out.write(myStr+'\n') 
         myStr = ''
