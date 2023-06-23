@@ -10,7 +10,6 @@ for line in f_in:
     if len(data_matches) != 0: 
         # myStr += ', '.join(data_matches) 
         myStr += ' '.join(data_matches) 
-    else:
-        f_out.write(myStr+'\n') 
-        myStr = ''
+    f_out.write(myStr+'\n') 
+    myStr = ''
 f_out.close()
