@@ -1,7 +1,7 @@
 import re
 
 st = re.compile(r' -?\d+')
-f_in = open('IR.csv','r')
+f_in = open('IR1.csv','r')
 f_out = open('IR_out.csv','w')
 myStr = ''
 for line in f_in: 
@@ -10,7 +10,6 @@ for line in f_in:
     if len(data_matches) != 0: 
         # myStr += ', '.join(data_matches) 
         myStr += ' '.join(data_matches) 
-    else:
-        f_out.write(myStr+'\n') 
-        myStr = ''
+    f_out.write(myStr+'\n') 
+    myStr = ''
 f_out.close()
