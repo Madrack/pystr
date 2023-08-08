@@ -1,7 +1,7 @@
 import re
 
 st = re.compile(r' -?\d+')
-f_in = open('IR.csv','r')
+f_in = open('IR1.csv','r')
 f_out = open('IR_out.csv','w')
 myStr = ''
 for line in f_in: 
